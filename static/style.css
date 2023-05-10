@@ -1,0 +1,16 @@
+
+h2{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    color: blue;
+}
+div{
+    align-items: normal;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 25px;
+    background: rgb(209, 10, 10);
+    width: 60%;
+}

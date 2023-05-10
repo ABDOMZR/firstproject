@@ -1,0 +1,21 @@
+{%load static%}
+<link rel="stylesheet"  href="{% static 'style.css' %}?{% now 'U' %}">
+{%if user.is_authenticated %}
+<button><a href="logout">log out</a></button>
+<h1>welcooooome {{user.email}}</h1>
+
+{%else%}
+<h2>INPUT UR TEXT BRUH</h2>
+{%endif%}
+{%for feature in features%}
+<div>
+    <h3>{{feature.name}}</h3>
+    <p>{{feature.id}}</p>
+    <p>{{feature.description}}</p>
+</div>
+{%endfor%}
+{%if user.is_authenticated%}
+<h1>run barry run {{user.username}}</h1>
+{%endif%}
+
+
